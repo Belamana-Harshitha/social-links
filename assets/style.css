@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: white;
+}
+h5{
+    color: rgb(135, 248, 5);
+}
+p{
+    color: rgb(179, 173, 173);
+    margin-top: 18px;
+    font-size:small;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+body{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 29%;
+    max-width: 1200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #181818;
+}
+img{
+    width:27%;
+    margin:10px;
+    height:auto;
+    border-radius: 50%;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    width: 87%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color:#2c2a2a ;
+    color: aliceblue;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn a:active {
+    color: black;
+}
+.btn:active {
+    background-color: rgb(135, 248, 5);
+    color: black;
+}
+
+.btn:active a{
+    color: black;
+}
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/static/Inter-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/static/Inter-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Inter";
+    src: url("../fonts/static/Inter-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
